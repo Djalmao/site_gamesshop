@@ -1,0 +1,149 @@
+* { /*Reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1, /*Para determinar que a fonte dentro do cabeçalho e da seção seja do tipo "bungee".*/
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal; /*Para tirar do cabeçalho e da seção o padrão de negrito que vem no navegador.*/
+}
+
+header ul li { /*Para determinar que a fonte dos botões de menu seja do tipo "bungee".*/
+    font-family: "Bungee", sans-serif;
+}
+
+body, input, textarea { /*Para determinar que a fonte dentro do corpo da página seja do tipo "roboto".*/
+    font-family: "Roboto", sans-serif;
+}
+
+header { /*Para estilizar o cabeçalho.*/
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header nav li { 
+    display: inline; /*Para colocar os botões de menu lado a lado.*/
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a { 
+    color: #ecf0f1; /*Para alterar a cor da fonte do menu.*/
+    text-decoration: none; /*Para retirar o underline dos botões do menu.*/
+}
+
+.container {
+    max-width: 1280px; /*Para centralizar o cabeçalho na página.*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container { /*Para evitar de repetir esse módulo de comandos, utiliza-se a "," + a "section .container".
+                        Isso para colocar o texto e as logos ao lado da figura. Chamado efeito CASCATA DO CSS.*/
+    display: flex; /*Para colocar os botões de menu lado a lado com o cabeçalho.*/
+    align-items: center; /*Para alinhar os botões de menu com o cabeçalho.*/
+    justify-content: space-between; /*Para afastar os botões de menu para o lado direito do cabeçalho.*/
+}
+
+.brands-list img { /*Para alterar o tamanho das logos.*/
+    height: 24px;
+} 
+
+.brands-list li { /*Para deixar as logos uma ao lado da outra.*/
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start; /*Para deixar o texto alinhado ao topo da imagem da loja. Caso contrário, ficaria
+                                alinhada ao centro da imagem devido ao comando "align-items: center" acima.*/.
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section { /*Para informar ao navegador que a cor da fonte da seção, e evitar a repetição de comandos.*/
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.store-front { /*A classe foi criada no html para que somente a imagem da loja fosse afetada pelo comando abaixo.
+                 Caso contrário, as logos também seriam afetadas, o que não se quer nesse exercício.*/
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline; /*Para colocar as imagens lado a lado.*/
+    margin-right: 8px; /*Para espaçar as imagens.*/
+}
+
+.social-links li a {
+    text-decoration: none; /*Para retirar o underline das imagens.*/
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea { /*Para desabilitar a variação do tamanho da caixa de texto.*/
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer; /*Para que o cursor vire uma mãozinha ao passar sobre o botão.*/
+}
+
+form button:hover { /*Para mudar a cor do botão ao passar o mouse em cima.*/
+    background-color: #3c59ac;
+}
+
+input:focus, textarea:focus { /*Altera a cor da linha das caixas de texto quando selecionadas/em foco (por isso o "focus")*/
+    outline-color: #182C61;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
